@@ -47,7 +47,16 @@
                                 <li>
                                     <a href="projects">Portfolio</a>
                                 </li>
+                                <li class="has-droupdown">
+                                    <a href="#">Language</a>
+                                    <ul class="submenu">
+                                        <li><a class="single" href="">Eng</a></li>
+                                        <li><a Ru class="single"  href="">Ru</a></li>
+                                        <li><a class="single" href="">Uz</a></li>
+                                    </ul>
+                                </li>
                                 <li>
+
                                     <a href={{route('contacts')}} >Contact</a>
                                 </li>
                             </ul>
@@ -128,45 +137,28 @@
             <div class="body-mobile d-block d-xl-none">
                 <nav class="nav-main mainmenu-nav mt--30">
                     <ul class="mainmenu" id="mobile-menu-active">
-                        <li class="has-droupdown">
-                            <a href="#">Home</a>
-                            <ul class="submenu">
-                                <a href="#" class="tag">Multipages</a>
-                                <li><a class="mobile-menu-link" href="index.html">Creative Agency</a></li>
-                                <li><a class="mobile-menu-link" href="index-two.html">Corporate Agency</a></li>
-                                <li><a class="mobile-menu-link" href="index-three.html">StartUp Agency</a></li>
-                                <li><a class="mobile-menu-link" href="index-four.html">Digital Agency</a></li>
-                                <li><a class="mobile-menu-link" href="index-five.html">Portfolio Agency</a></li>
-                                <li><a class="mobile-menu-link" href="index-six.html">Full Screen Slider</a></li>
-                                <li><a class="mobile-menu-link" href="index-seven.html">Portfolio Showcase</a></li>
-                            </ul>
-                            <ul class="submenu">
-                                <a href="#" class="tag">Onepages</a>
-                                <li><a class="mobile-menu-link" href="one-page-one.html">Creative OnePage</a></li>
-                                <li><a class="mobile-menu-link" href="one-page-two.html">Corporate OnePage</a></li>
-                                <li><a class="mobile-menu-link" href="one-page-three.html">StartUp OnePage</a></li>
-                                <li><a class="mobile-menu-link" href="one-page-four.html">Digital OnePage</a></li>
-                                <li><a class="mobile-menu-link" href="one-page-five.html">Portfolio OnePage</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li class="has-droupdown">
-                            {{-- <a href={{route('services')}}>Services</a> --}}
-                        </li>
-                        <li class="has-droupdown">
-                            <a href="#">Pages</a>
-                        </li>
-                        <li class="has-droupdown">
-                            <a href="#">Blog</a>
-                            <ul class="submenu">
-                                <li><a class="mobile-menu-link" href="blog-list.html">Blog List</a></li>
-                                <li><a class="mobile-menu-link" href="blog-grid.html">Blog Grid</a></li>
-                                <li><a class="mobile-menu-link" href="blog-details.html">Blog Details</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="contactus.html">Contact Us</a>
-                        </li>
+
+                            <li>
+                                <a href="/">Home</a>
+                            </li>
+                            <li >
+                                <a href="services">Services</a>
+                            </li>
+                            <li>
+                                <a href="projects">Portfolio</a>
+                            </li>
+                            <li class="has-droupdown">
+                                <a href="#">Language</a>
+                                <ul class="submenu">
+                                    <li><a class="single" href="/lang/en">Eng</a></li>
+                                    <li><a class="single"  href="/lang/ru">Ru</a></li>
+                                    <li><a class="single" href="/lang/ru">Uz</a></li>
+                                </ul>
+                            </li>
+                            <li>
+
+                                <a href={{route('contacts')}} >Contact</a>
+                            </li>
                     </ul>
                 </nav>
                 <div class="social-wrapper-two mt--50">

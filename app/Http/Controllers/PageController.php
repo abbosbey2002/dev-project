@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use App\Models\Counter;
 use App\Models\Portfolio;
 use App\Models\Service;
 use Illuminate\Http\Request;
+use PHPUnit\Framework\Constraint\Count;
 
 class PageController extends Controller
 {
@@ -13,8 +15,9 @@ class PageController extends Controller
     public function index(){
         $services=Service::all();
         $portfolios=Portfolio::all();
+        $counts=Counter::all();
 
-        return view('front.index')->with('projects', $portfolios)->with('services', $services);
+        return view('front.index')->with('projects', $portfolios)->with('services', $services)->with('counters', $counts);
     }
     //
     public function service(){

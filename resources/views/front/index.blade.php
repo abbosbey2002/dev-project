@@ -114,32 +114,35 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
+                    @foreach ($counters as $count)
+
                     <div class="counter-up-wrapper-one">
                         <!-- ingle counter -->
                         <div class="counter-single" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                            <h2 class="title"><span class="counter plus">858</span></h2>
+                            <h2 class="title"><span class="counter plus">{{$count->experience}}</span></h2>
                             <p class="disc">Years Of Experience</p>
                         </div>
                         <!-- single-counter End -->
                         <!-- ingle counter -->
                         <div class="counter-single" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
-                            <h2 class="title"><span class="counter k-plus">66</span></h2>
+                            <h2 class="title"><span class="counter k-plus">{{$count->project}}</span></h2>
                             <p class="disc">Complete Projects</p>
                         </div>
                         <!-- single-counter End -->
                         <!-- ingle counter -->
                         <div class="counter-single" data-sal-delay="350" data-sal="slide-up" data-sal-duration="800">
-                            <h2 class="title"><span class="counter plus">29</span></h2>
+                            <h2 class="title"><span class="counter plus">{{$count->client}}</span></h2>
                             <p class="disc">Client Satisfied</p>
                         </div>
                         <!-- single-counter End -->
                         <!-- ingle counter -->
                         <div class="counter-single" data-sal-delay="450" data-sal="slide-up" data-sal-duration="800">
-                            <h2 class="title"><span class="counter plus">150</span></h2>
+                            <h2 class="title"><span class="counter plus">{{$count->award}}</span></h2>
                             <p class="disc">Global Award Winning</p>
                         </div>
                         <!-- single-counter End -->
                     </div>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -184,7 +187,7 @@
                 @endforeach
 
             </div>
-          
+
         </div>
     </div>
     <!-- service-appoinment-area End -->

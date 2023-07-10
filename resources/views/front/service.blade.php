@@ -47,7 +47,10 @@
                         </h5>
                     </a>
                     <p class="disc">
-                        {{$service->description}}
+                        {!! $service->description !!}
+        
+
+                        {{-- {!! htmlspecialchars_decode($service->description) !!} --}}
                     </p>
                     <a href={{route('serviceSingle', ['id'=>$service->id])}} class="rts-read-more">Learn More<i class="far fa-chevron-double-right"></i></a>
                 </div>

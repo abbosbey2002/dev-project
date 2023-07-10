@@ -1,7 +1,11 @@
 <?php
 
+use App\Http\Controllers\Admin;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\CounterController;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\PartnerController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\ServiceController;
 use App\Models\Portfolio;
@@ -24,9 +28,13 @@ Route::get('/', function () {
 
 Route::get('/', [PageController::class, 'index']);
 
-Route::view('admin', '/admin/index');
+Route::resource('admin', AdminController::class);
 
 Route::resource('portfolio', PortfolioController::class);
+
+Route::resource('counter', CounterController::class);
+
+Route::resource('partners', PartnerController::class);
 
 
 Route::resource('service', ServiceController::class);
@@ -44,3 +52,8 @@ Route::get('projectsingle', [PageController::class, 'projectsingle'])->name('pro
 Route::get('contacts', [PageController::class, 'contact'])->name('contacts');
 
 Route::resource('contact', ContactController::class);
+
+Route::get('/lang/{lang}',function($lang){
+    session(['lang'=>$lang]);
+    return back();
+});

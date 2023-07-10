@@ -29,7 +29,7 @@
                         </div>
                         <h4 class="title" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">{{$service->name}}</h4>
                         <p class="disc" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                            {{$service->description}}
+                            {!!  $service->description !!}
 
                         </p>
                         <p class="disc" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
